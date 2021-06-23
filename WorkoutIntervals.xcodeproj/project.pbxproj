@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75DC585D26837791002EA323 /* WorkoutIntervals WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 75DC585C26837791002EA323 /* WorkoutIntervals WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		75DC586326837791002EA323 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DC586126837791002EA323 /* Interface.storyboard */; };
+		75DC586526837792002EA323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DC586426837792002EA323 /* Assets.xcassets */; };
+		75DC586C26837793002EA323 /* WorkoutIntervals WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75DC586B26837793002EA323 /* WorkoutIntervals WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		75DC587126837793002EA323 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DC587026837793002EA323 /* InterfaceController.swift */; };
+		75DC587326837793002EA323 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DC587226837793002EA323 /* ExtensionDelegate.swift */; };
+		75DC587526837793002EA323 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DC587426837793002EA323 /* NotificationController.swift */; };
+		75DC587726837793002EA323 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DC587626837793002EA323 /* ComplicationController.swift */; };
+		75DC587926837793002EA323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DC587826837793002EA323 /* Assets.xcassets */; };
+		75DC588526837793002EA323 /* WorkoutIntervalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DC588426837793002EA323 /* WorkoutIntervalsTests.swift */; };
+		75DC589026837793002EA323 /* WorkoutIntervalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DC588F26837793002EA323 /* WorkoutIntervalsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75DC585E26837791002EA323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DC585226837791002EA323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DC585B26837791002EA323;
+			remoteInfo = "WorkoutIntervals WatchKit App";
+		};
+		75DC586D26837793002EA323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DC585226837791002EA323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DC586A26837793002EA323;
+			remoteInfo = "WorkoutIntervals WatchKit Extension";
+		};
+		75DC588126837793002EA323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DC585226837791002EA323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DC586A26837793002EA323;
+			remoteInfo = "WorkoutIntervals WatchKit Extension";
+		};
+		75DC588C26837793002EA323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DC585226837791002EA323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DC585B26837791002EA323;
+			remoteInfo = "WorkoutIntervals WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75DC589726837793002EA323 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				75DC586C26837793002EA323 /* WorkoutIntervals WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC589B26837793002EA323 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				75DC585D26837791002EA323 /* WorkoutIntervals WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		75DC585826837791002EA323 /* WorkoutIntervals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutIntervals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC585C26837791002EA323 /* WorkoutIntervals WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorkoutIntervals WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC586226837791002EA323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		75DC586426837792002EA323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75DC586626837792002EA323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DC586B26837793002EA323 /* WorkoutIntervals WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WorkoutIntervals WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC587026837793002EA323 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		75DC587226837793002EA323 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		75DC587426837793002EA323 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		75DC587626837793002EA323 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		75DC587826837793002EA323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75DC587A26837793002EA323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DC587B26837793002EA323 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		75DC588026837793002EA323 /* WorkoutIntervalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutIntervalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC588426837793002EA323 /* WorkoutIntervalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntervalsTests.swift; sourceTree = "<group>"; };
+		75DC588626837793002EA323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DC588B26837793002EA323 /* WorkoutIntervalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutIntervalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC588F26837793002EA323 /* WorkoutIntervalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntervalsUITests.swift; sourceTree = "<group>"; };
+		75DC589126837793002EA323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75DC586826837793002EA323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC587D26837793002EA323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC588826837793002EA323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75DC585126837791002EA323 = {
+			isa = PBXGroup;
+			children = (
+				75DC586026837791002EA323 /* WorkoutIntervals WatchKit App */,
+				75DC586F26837793002EA323 /* WorkoutIntervals WatchKit Extension */,
+				75DC588326837793002EA323 /* WorkoutIntervalsTests */,
+				75DC588E26837793002EA323 /* WorkoutIntervalsUITests */,
+				75DC585926837791002EA323 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75DC585926837791002EA323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75DC585826837791002EA323 /* WorkoutIntervals.app */,
+				75DC585C26837791002EA323 /* WorkoutIntervals WatchKit App.app */,
+				75DC586B26837793002EA323 /* WorkoutIntervals WatchKit Extension.appex */,
+				75DC588026837793002EA323 /* WorkoutIntervalsTests.xctest */,
+				75DC588B26837793002EA323 /* WorkoutIntervalsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75DC586026837791002EA323 /* WorkoutIntervals WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				75DC586126837791002EA323 /* Interface.storyboard */,
+				75DC586426837792002EA323 /* Assets.xcassets */,
+				75DC586626837792002EA323 /* Info.plist */,
+			);
+			path = "WorkoutIntervals WatchKit App";
+			sourceTree = "<group>";
+		};
+		75DC586F26837793002EA323 /* WorkoutIntervals WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				75DC587026837793002EA323 /* InterfaceController.swift */,
+				75DC587226837793002EA323 /* ExtensionDelegate.swift */,
+				75DC587426837793002EA323 /* NotificationController.swift */,
+				75DC587626837793002EA323 /* ComplicationController.swift */,
+				75DC587826837793002EA323 /* Assets.xcassets */,
+				75DC587A26837793002EA323 /* Info.plist */,
+				75DC587B26837793002EA323 /* PushNotificationPayload.apns */,
+			);
+			path = "WorkoutIntervals WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		75DC588326837793002EA323 /* WorkoutIntervalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				75DC588426837793002EA323 /* WorkoutIntervalsTests.swift */,
+				75DC588626837793002EA323 /* Info.plist */,
+			);
+			path = WorkoutIntervalsTests;
+			sourceTree = "<group>";
+		};
+		75DC588E26837793002EA323 /* WorkoutIntervalsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75DC588F26837793002EA323 /* WorkoutIntervalsUITests.swift */,
+				75DC589126837793002EA323 /* Info.plist */,
+			);
+			path = WorkoutIntervalsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75DC585726837791002EA323 /* WorkoutIntervals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC589C26837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervals" */;
+			buildPhases = (
+				75DC585626837791002EA323 /* Resources */,
+				75DC589B26837793002EA323 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DC585F26837791002EA323 /* PBXTargetDependency */,
+			);
+			name = WorkoutIntervals;
+			productName = WorkoutIntervals;
+			productReference = 75DC585826837791002EA323 /* WorkoutIntervals.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		75DC585B26837791002EA323 /* WorkoutIntervals WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC589826837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervals WatchKit App" */;
+			buildPhases = (
+				75DC585A26837791002EA323 /* Resources */,
+				75DC589726837793002EA323 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DC586E26837793002EA323 /* PBXTargetDependency */,
+			);
+			name = "WorkoutIntervals WatchKit App";
+			productName = "WorkoutIntervals WatchKit App";
+			productReference = 75DC585C26837791002EA323 /* WorkoutIntervals WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		75DC586A26837793002EA323 /* WorkoutIntervals WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC589426837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervals WatchKit Extension" */;
+			buildPhases = (
+				75DC586726837793002EA323 /* Sources */,
+				75DC586826837793002EA323 /* Frameworks */,
+				75DC586926837793002EA323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WorkoutIntervals WatchKit Extension";
+			productName = "WorkoutIntervals WatchKit Extension";
+			productReference = 75DC586B26837793002EA323 /* WorkoutIntervals WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		75DC587F26837793002EA323 /* WorkoutIntervalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC589F26837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervalsTests" */;
+			buildPhases = (
+				75DC587C26837793002EA323 /* Sources */,
+				75DC587D26837793002EA323 /* Frameworks */,
+				75DC587E26837793002EA323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DC588226837793002EA323 /* PBXTargetDependency */,
+			);
+			name = WorkoutIntervalsTests;
+			productName = WorkoutIntervalsTests;
+			productReference = 75DC588026837793002EA323 /* WorkoutIntervalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75DC588A26837793002EA323 /* WorkoutIntervalsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DC58A226837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervalsUITests" */;
+			buildPhases = (
+				75DC588726837793002EA323 /* Sources */,
+				75DC588826837793002EA323 /* Frameworks */,
+				75DC588926837793002EA323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DC588D26837793002EA323 /* PBXTargetDependency */,
+			);
+			name = WorkoutIntervalsUITests;
+			productName = WorkoutIntervalsUITests;
+			productReference = 75DC588B26837793002EA323 /* WorkoutIntervalsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75DC585226837791002EA323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					75DC585726837791002EA323 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					75DC585B26837791002EA323 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					75DC586A26837793002EA323 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					75DC587F26837793002EA323 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 75DC586A26837793002EA323;
+					};
+					75DC588A26837793002EA323 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 75DC585B26837791002EA323;
+					};
+				};
+			};
+			buildConfigurationList = 75DC585526837791002EA323 /* Build configuration list for PBXProject "WorkoutIntervals" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75DC585126837791002EA323;
+			productRefGroup = 75DC585926837791002EA323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75DC585726837791002EA323 /* WorkoutIntervals */,
+				75DC585B26837791002EA323 /* WorkoutIntervals WatchKit App */,
+				75DC586A26837793002EA323 /* WorkoutIntervals WatchKit Extension */,
+				75DC587F26837793002EA323 /* WorkoutIntervalsTests */,
+				75DC588A26837793002EA323 /* WorkoutIntervalsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75DC585626837791002EA323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC585A26837791002EA323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DC586526837792002EA323 /* Assets.xcassets in Resources */,
+				75DC586326837791002EA323 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC586926837793002EA323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DC587926837793002EA323 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC587E26837793002EA323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC588926837793002EA323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75DC586726837793002EA323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DC587526837793002EA323 /* NotificationController.swift in Sources */,
+				75DC587726837793002EA323 /* ComplicationController.swift in Sources */,
+				75DC587326837793002EA323 /* ExtensionDelegate.swift in Sources */,
+				75DC587126837793002EA323 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC587C26837793002EA323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DC588526837793002EA323 /* WorkoutIntervalsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DC588726837793002EA323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DC589026837793002EA323 /* WorkoutIntervalsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75DC585F26837791002EA323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DC585B26837791002EA323 /* WorkoutIntervals WatchKit App */;
+			targetProxy = 75DC585E26837791002EA323 /* PBXContainerItemProxy */;
+		};
+		75DC586E26837793002EA323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DC586A26837793002EA323 /* WorkoutIntervals WatchKit Extension */;
+			targetProxy = 75DC586D26837793002EA323 /* PBXContainerItemProxy */;
+		};
+		75DC588226837793002EA323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DC586A26837793002EA323 /* WorkoutIntervals WatchKit Extension */;
+			targetProxy = 75DC588126837793002EA323 /* PBXContainerItemProxy */;
+		};
+		75DC588D26837793002EA323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DC585B26837791002EA323 /* WorkoutIntervals WatchKit App */;
+			targetProxy = 75DC588C26837793002EA323 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75DC586126837791002EA323 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75DC586226837791002EA323 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75DC589226837793002EA323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75DC589326837793002EA323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75DC589526837793002EA323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				INFOPLIST_FILE = "WorkoutIntervals WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervals.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		75DC589626837793002EA323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				INFOPLIST_FILE = "WorkoutIntervals WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervals.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		75DC589926837793002EA323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				IBSC_MODULE = WorkoutIntervals_WatchKit_Extension;
+				INFOPLIST_FILE = "WorkoutIntervals WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervals.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		75DC589A26837793002EA323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				IBSC_MODULE = WorkoutIntervals_WatchKit_Extension;
+				INFOPLIST_FILE = "WorkoutIntervals WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervals.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		75DC589D26837793002EA323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		75DC589E26837793002EA323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		75DC58A026837793002EA323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				INFOPLIST_FILE = WorkoutIntervalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutIntervals WatchKit Extension.appex/WorkoutIntervals WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		75DC58A126837793002EA323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				INFOPLIST_FILE = WorkoutIntervalsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutIntervals WatchKit Extension.appex/WorkoutIntervals WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		75DC58A326837793002EA323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				INFOPLIST_FILE = WorkoutIntervalsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WorkoutIntervals WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		75DC58A426837793002EA323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5JG572E5G;
+				INFOPLIST_FILE = WorkoutIntervalsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thomdavis.WorkoutIntervalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WorkoutIntervals WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75DC585526837791002EA323 /* Build configuration list for PBXProject "WorkoutIntervals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC589226837793002EA323 /* Debug */,
+				75DC589326837793002EA323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC589426837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervals WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC589526837793002EA323 /* Debug */,
+				75DC589626837793002EA323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC589826837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervals WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC589926837793002EA323 /* Debug */,
+				75DC589A26837793002EA323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC589C26837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC589D26837793002EA323 /* Debug */,
+				75DC589E26837793002EA323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC589F26837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC58A026837793002EA323 /* Debug */,
+				75DC58A126837793002EA323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DC58A226837793002EA323 /* Build configuration list for PBXNativeTarget "WorkoutIntervalsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DC58A326837793002EA323 /* Debug */,
+				75DC58A426837793002EA323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75DC585226837791002EA323 /* Project object */;
+}
