@@ -96,6 +96,7 @@
 		75DC588B26837793002EA323 /* WorkoutIntervalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutIntervalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DC588F26837793002EA323 /* WorkoutIntervalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntervalsUITests.swift; sourceTree = "<group>"; };
 		75DC589126837793002EA323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DC58A5268379A1002EA323 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 		75DC585126837791002EA323 = {
 			isa = PBXGroup;
 			children = (
+				75DC58A5268379A1002EA323 /* README.md */,
 				75DC586026837791002EA323 /* WorkoutIntervals WatchKit App */,
 				75DC586F26837793002EA323 /* WorkoutIntervals WatchKit Extension */,
 				75DC588326837793002EA323 /* WorkoutIntervalsTests */,
