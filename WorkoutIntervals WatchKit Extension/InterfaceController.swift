@@ -8,7 +8,6 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
     
     @IBOutlet weak var onOffSwitch: WKInterfaceSwitch!
@@ -20,7 +19,8 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        onOffText.setText("On");
+        onOffSwitch.setOn(true);
+        setText(true);
     }
     
     override func didDeactivate() {
