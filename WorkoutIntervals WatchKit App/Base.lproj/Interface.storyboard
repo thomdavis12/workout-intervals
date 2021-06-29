@@ -17,14 +17,28 @@
                             </connections>
                         </switch>
                         <textField width="1" alignment="left" id="9DF-Iz-15e"/>
+                        <textField width="1" alignment="left" text="Run Minutes" id="3w4-5e-WwK"/>
+                        <picker height="34" alignment="left" id="r9N-SK-IWN">
+                            <connections>
+                                <action selector="runPickerAction:" destination="AgC-eL-Hgc" id="vEB-J1-BTk"/>
+                            </connections>
+                        </picker>
+                        <textField width="1" alignment="left" text="Walk Minutes" id="kuT-eR-sqi"/>
+                        <picker height="34" alignment="left" id="o5a-Pr-PKc">
+                            <connections>
+                                <action selector="walkPickerAction:" destination="AgC-eL-Hgc" id="8XP-GI-nmK"/>
+                            </connections>
+                        </picker>
                     </items>
                     <connections>
                         <outlet property="onOffSwitch" destination="2SG-of-YWF" id="NJu-KW-FMv"/>
                         <outlet property="onOffText" destination="9DF-Iz-15e" id="Ra1-ak-Hh0"/>
+                        <outlet property="runPicker" destination="r9N-SK-IWN" id="akX-I0-bwy"/>
+                        <outlet property="walkPicker" destination="o5a-Pr-PKc" id="qBc-1K-NOA"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="297"/>
+            <point key="canvasLocation" x="220" y="230.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
