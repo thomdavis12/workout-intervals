@@ -7,16 +7,17 @@
 
 import WatchKit
 import Foundation
+import HealthKit
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
     
     @IBOutlet weak var onOffSwitch: WKInterfaceSwitch!
     @IBOutlet var onOffText: WKInterfaceTextField!
     @IBOutlet weak var runPicker: WKInterfacePicker!
     @IBOutlet weak var walkPicker: WKInterfacePicker!
     
-    var runPickerVal = 0;
-    var walkPickerVal = 0;
+    var runMinutes = 0;
+    var walkMinutes = 0;
     
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
@@ -34,6 +35,9 @@ class InterfaceController: WKInterfaceController {
         
         runPicker.setItems([item1, item2, item3, item4]);
         walkPicker.setItems([item1, item2, item3, item4]);
+        
+        
+        
     }
     
     override func willActivate() {
@@ -47,13 +51,43 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func runPickerAction(_ value: Int) {
-        runPickerVal = value;
-        print(runPickerVal);
+        if (value == 0) {
+            runMinutes = 4;
+        }
+        
+        if (value == 1) {
+            runMinutes = 8;
+        }
+        
+        if (value == 2) {
+            runMinutes = 12;
+        }
+        
+        if (value == 3) {
+            runMinutes = 16;
+        }
+        
+        print("runMinutes " + String.init(runMinutes));
     }
     
     @IBAction func walkPickerAction(_ value: Int) {
-        walkPickerVal = value;
-        print(walkPickerVal);
+        if (value == 0) {
+            walkMinutes = 4;
+        }
+        
+        if (value == 1) {
+            walkMinutes = 8;
+        }
+        
+        if (value == 2) {
+            walkMinutes = 12;
+        }
+        
+        if (value == 3) {
+            walkMinutes = 16;
+        }
+        
+        print("walkMinutes " + String.init(walkMinutes));
     }
     
     @IBAction func setText(_ value: Bool) {
@@ -63,5 +97,17 @@ class InterfaceController: WKInterfaceController {
         else {
             onOffText.setText("Off");
         }
+    }
+    
+    func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
+        <#code#>
+    }
+    
+    func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
+        <#code#>
+    }
+    
+    func workoutSession(_ workoutSession: HKWorkoutSession, didGenerate event: HKWorkoutEvent) {
+        <#code#>
     }
 }

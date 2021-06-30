@@ -4,31 +4,16 @@
 //
 //  Created by Thomas Davis on 6/23/21.
 //
-
 import WatchKit
 import Foundation
 import UserNotifications
 
 class NotificationController: WKUserNotificationInterfaceController {
 
-    var isOn = false;
-    var runMinutes = 0;
-    var walkMinutes = 0;
-    
     override init() {
         // Initialize variables here.
         super.init()
         
-        let controller = InterfaceController.init();
-        
-        if (controller.onOffSwitch.isEqual(true))
-        {
-            isOn = true;
-        }
-        
-        walkMinutes = controller.runPickerVal;
-        runMinutes = controller.walkPickerVal;
-    
         // Configure interface objects here.
     }
 
@@ -44,10 +29,5 @@ class NotificationController: WKUserNotificationInterfaceController {
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
-        
-        if (!isOn)
-        {
-            print("Hello World!");
-        }
     }
 }
